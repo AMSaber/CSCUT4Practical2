@@ -12,7 +12,7 @@ import java.lang.Number;
  */
 public class FilesInOut {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         // Replace this with statements to set the file name (input) and file name (output).
         // Initially it will be easier to hardcode suitable file names.
 
@@ -27,6 +27,24 @@ public class FilesInOut {
 
         // Finally, add code to read the filenames as arguments from the command line.
 
+        String inputFile = "";
+        String output = "";
+        String outputFile ="";
+        if (args.length == 2){
+            inputFile = args[0];
+            outputFile = args[1];
+        }
+        else if (args.length == 3){
+            if(args[0])
+        }
+        File input1 = new File("input.txt");
+        File input2 = new File("inputm.txt");
+        Scanner in1 = new Scanner(input1);
+        Scanner in2 = new Scanner(input2);
+        
+        PrintWriter out = new PrintWriter("output.txt");
+        
+        
         System.out.println("You need to add your own code to do anything");
 
     } // main
